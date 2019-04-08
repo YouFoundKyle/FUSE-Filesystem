@@ -1,0 +1,2665 @@
+mkdir -p mnt || true
+./nufs -s -f mnt data.nufs
+TODO: mount data.nufs as data file
+PATH IS data.nufs
+---INIT MOUNT---
+Page
+---BITMAP---
+128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+---DIR INIT---
+INODE SIZE: 56ALLOCATING INODE
++ alloc_inode() -> 0
++ alloc_page() -> 1
++ alloc_page() -> 2
+putting node # 0 , .
+---INODE---
+refs: 1
+mode: 16877
+size: 0
+direct ptr: 1
+indir ptr: -1
+---INITS DONE---
+checking access of /
+access(/, 0004) -> 0
+directory lookup of .Trash
+.Trash not found
+getattr(/.Trash) -> (-2) {mode: 0000, size: 0}
+getattr(/) -> (0) {mode: 40755, size: 0}
+directory lookup of autorun.inf
+autorun.inf not found
+getattr(/autorun.inf) -> (-2) {mode: 0000, size: 0}
+directory lookup of .xdg-volume-info
+.xdg-volume-info not found
+getattr(/.xdg-volume-info) -> (-2) {mode: 0000, size: 0}
+directory lookup of .Trash-1000
+.Trash-1000 not found
+getattr(/.Trash-1000) -> (-2) {mode: 0000, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+directory lookup of autorun.inf
+autorun.inf not found
+getattr(/autorun.inf) -> (-2) {mode: 0000, size: 0}
+directory lookup of one.txt
+one.txt not found
+getattr(/one.txt) -> (-2) {mode: 0000, size: 0}
+MKNOD : one.txt with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 1
++ alloc_page() -> 3
++ alloc_page() -> 4
+putting node # 1 , one.txt
+mknod(one.txt, 100664) -> 0
+directory lookup of one.txt
+getattr(/one.txt) -> (0) {mode: 100664, size: 0}
+open(/one.txt) -> 0
+ioctl(/one.txt, 21505, ...) -> -1
+directory lookup of one.txt
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 11
+start
+node size: 11
+write(/one.txt, 11 bytes, @+0) -> 11
+directory lookup of one.txt
+getattr(/one.txt) -> (0) {mode: 100664, size: 11}
+open(/one.txt) -> 0
+ioctl(/one.txt, 21505, ...) -> -1
+directory lookup of one.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/one.txt, 4096 bytes, @+0) -> 4096
+directory lookup of one.txt
+getattr(/one.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of two.txt
+two.txt not found
+getattr(/two.txt) -> (-2) {mode: 0000, size: 0}
+MKNOD : two.txt with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 2
++ alloc_page() -> 5
++ alloc_page() -> 6
+putting node # 2 , two.txt
+mknod(two.txt, 100664) -> 0
+directory lookup of two.txt
+getattr(/two.txt) -> (0) {mode: 100664, size: 0}
+open(/two.txt) -> 0
+ioctl(/two.txt, 21505, ...) -> fusermount -u mnt || true
+-1
+directory lookup of two.txt
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 11
+start
+node size: 11
+write(/two.txt, 11 bytes, @+0) -> 11
+directory lookup of two.txt
+getattr(/two.txt) -> (0) {mode: 100664, size: 11}
+open(/two.txt) -> 0
+ioctl(/two.txt, 21505, ...) -> -1
+directory lookup of two.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/two.txt, 4096 bytes, @+0) -> 4096
+directory lookup of two.txt
+getattr(/two.txt) -> (0) {mode: 100664, size: 11}
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+directory lookup of 2k.txt
+2k.txt not found
+getattr(/2k.txt) -> (-2) {mode: 0000, size: 0}
+MKNOD : 2k.txt with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 3
++ alloc_page() -> 7
++ alloc_page() -> 8
+putting node # 3 , 2k.txt
+mknod(2k.txt, 100664) -> 0
+directory lookup of 2k.txt
+getattr(/2k.txt) -> (0) {mode: 100664, size: 0}
+open(/2k.txt) -> 0
+ioctl(/2k.txt, 21505, ...) -> -1
+directory lookup of 2k.txt
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2001
+start
+node size: 2001
+write(/2k.txt, 2001 bytes, @+0) -> 2001
+open(/2k.txt) -> 0
+ioctl(/2k.txt, 21505, ...) -> -1
+directory lookup of 2k.txt
+getattr(/2k.txt) -> (0) {mode: 100664, size: 2001}
+directory lookup of 2k.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/2k.txt, 4096 bytes, @+0) -> 4096
+directory lookup of 2k.txt
+getattr(/2k.txt) -> (0) {mode: 100664, size: 2001}
+open(/2k.txt) -> 0
+ioctl(/2k.txt, 21505, ...) -> -1
+directory lookup of 2k.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/2k.txt, 4096 bytes, @+0) -> 4096
+mkdir -p mnt || true
+./nufs -s -f mnt data.nufs
+TODO: mount data.nufs as data file
+PATH IS data.nufs
+---PAGE INIT CALLED AGAIN---
+---INITS DONE---
+directory lookup of .xdg-volume-info
+.xdg-volume-info not found
+getattr(/.xdg-volume-info) -> (-2) {mode: 0000, size: 0}
+checking access of /
+access(/, 0004) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+directory lookup of autorun.inf
+autorun.inf not found
+getattr(/autorun.inf) -> (-2) {mode: 0000, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+directory lookup of 2k.txt
+getattr(/2k.txt) -> (0) {mode: 100664, size: 2001}
+directory lookup of .Trash
+.Trash not found
+getattr(/.Trash) -> (-2) {mode: 0000, size: 0}
+directory lookup of .Trash-1000
+.Trash-1000 not found
+getattr(/.Trash-1000) -> (-2) {mode: 0000, size: 0}
+directory lookup of two.txt
+getattr(/two.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of one.txt
+getattr(/one.txt) -> (0) {mode: 100664, size: 11}
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+directory lookup of autorun.inf
+autorun.inf not found
+getattr(/autorun.inf) -> (-2) {mode: 0000, size: 0}
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: 2k.txt
+File Found: two.txt
+File Found: one.txt
+File Found: .
+readdir(/) -> 0
+open(/one.txt) -> 0
+ioctl(/one.txt, 21505, ...) -> -1
+directory lookup of one.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/one.txt, 4096 bytes, @+0) -> 4096
+directory lookup of one.txt
+getattr(/one.txt) -> (0) {mode: 100664, size: 11}
+open(/two.txt) -> 0
+ioctl(/two.txt, 21505, ...) -> -1
+directory lookup of two.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/two.txt, 4096 bytes, @+0) -> 4096
+directory lookup of two.txt
+getattr(/two.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of one.txt
+getattr(/one.txt) -> (0) {mode: 100664, size: 11}
+unlinking /one.txtdirectory lookup of one.txt
++ free_page(3)
++ free_page(4)
+deleting file one.txt
+unlink(/one.txt) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: .
+readdir(/) -> 0
+directory lookup of abc.txt
+abc.txt not found
+getattr(/abc.txt) -> (-2) {mode: 0000, size: 0}
+directory lookup of two.txt
+getattr(/two.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of abc.txt
+abc.txt not found
+getattr(/abc.txt) -> (-2) {mode: 0000, size: 0}
+directory lookup of abc.txt
+abc.txt not found
+getattr(/abc.txt) -> (-2) {mode: 0000, size: 0}
+rename
+directory lookup of two.txt
+deleting file two.txt
+putting node # 2 , abc.txt
+rename(/two.txt => /abc.txt) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: abc.txt
+File Found: .
+readdir(/) -> 0
+open(/abc.txt) -> 0
+ioctl(/abc.txt, 21505, ...) -> -1
+directory lookup of abc.txt
+getattr(/abc.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of abc.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/abc.txt, 4096 bytes, @+0) -> 4096
+directory lookup of abc.txt
+getattr(/abc.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of def.txt
+def.txt not found
+getattr(/def.txt) -> (-2) {mode: 0000, size: 0}
+directory lookup of def.txt
+def.txt not found
+getattr(/def.txt) -> (-2) {mode: 0000, size: 0}
+directory lookup of abc.txt
+putting node # 2 , def.txt
+link(/abc.txt => /def.txt) -> 0
+directory lookup of def.txt
+getattr(/def.txt) -> (0) {mode: 100664, size: 11}
+open(/def.txt) -> 0
+ioctl(/def.txt, 21505, ...) -> -1
+directory lookup of def.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/def.txt, 4096 bytes, @+0) -> 4096
+directory lookup of def.txt
+getattr(/def.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of abc.txt
+getattr(/abc.txt) -> (0) {mode: 100664, size: 11}
+unlinking /abc.txtdirectory lookup of abc.txt
+deleting file abc.txt
+unlink(/abc.txt) -> 0
+open(/def.txt) -> 0
+ioctl(/def.txt, 21505, ...) -> -1
+directory lookup of def.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/def.txt, 4096 bytes, @+0) -> 4096
+directory lookup of def.txt
+getattr(/def.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of foo
+foo not found
+getattr(/foo) -> (-2) {mode: 0000, size: 0}
+MKNOD : foo with mode: 16893
+ALLOCATING INODE
++ alloc_inode() -> 1
++ alloc_page() -> 3
++ alloc_page() -> 4
+putting node # 1 , foo
+mknod(foo, 40775) -> 0
+mkdir(/foo) -> 0
+directory lookup of foo
+getattr(/foo) -> (0) {mode: 40775, size: 0}
+directory lookup of foo
+directory lookup of abc.txt
+abc.txt not found
+getattr(/foo/abc.txt) -> (-2) {mode: 0000, size: 0}
+directory lookup of foo
+directory lookup of abc.txt
+abc.txt not found
+getattr(/foo/abc.txt) -> (-2) {mode: 0000, size: 0}
+open(/def.txt) -> 0
+directory lookup of foo
+directory lookup of abc.txt
+abc.txt not found
+getattr(/foo/abc.txt) -> (-2) {mode: 0000, size: 0}
+MKNOD : abc.txt with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 4
++ alloc_page() -> 9
++ alloc_page() -> 10
+directory lookup of foo
+putting node # 4 , abc.txt
+mknod(abc.txt, 100664) -> 0
+directory lookup of foo
+directory lookup of abc.txt
+getattr(/foo/abc.txt) -> (0) {mode: 100664, size: 0}
+open(/foo/abc.txt) -> 0
+directory lookup of def.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/def.txt, 4096 bytes, @+0) -> 4096
+directory lookup of foo
+directory lookup of abc.txt
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 11
+start
+node size: 11
+write(/foo/abc.txt, 11 bytes, @+0) -> 11
+directory lookup of def.txt
+getattr(/def.txt) -> (0) {mode: 100664, size: 11}
+open(/foo/abc.txt) -> 0
+ioctl(/foo/abc.txt, 21505, ...) -> -1
+directory lookup of foo
+directory lookup of abc.txt
+getattr(/foo/abc.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of foo
+directory lookup of abc.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/foo/abc.txt, 4096 bytes, @+0) -> 4096
+directory lookup of foo
+directory lookup of abc.txt
+getattr(/foo/abc.txt) -> (0) {mode: 100664, size: 11}
+directory lookup of 40k.txt
+40k.txt not found
+getattr(/40k.txt) -> (-2) {mode: 0000, size: 0}
+MKNOD : 40k.txt with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 5
++ alloc_page() -> 11
++ alloc_page() -> 12
+putting node # 5 , 40k.txt
+mknod(40k.txt, 100664) -> 0
+directory lookup of 40k.txt
+getattr(/40k.txt) -> (0) {mode: 100664, size: 0}
+open(/40k.txt) -> 0
+ioctl(/40k.txt, 21505, ...) -> -1
+directory lookup of 40k.txt
+Writing 1 pages, start: 0, off_by: 0
+On Page: 0, Written: 0,Writing: 4096
+start
+node size: 4096
+write(/40k.txt, 4096 bytes, @+0) -> 4096
+directory lookup of 40k.txt
+Writing 1 pages, start: 1, off_by: 4096
+On Page: 1, Written: 0,Writing: 4096
+start
+node size: 8192
+write(/40k.txt, 4096 bytes, @+4096) -> 4096
+directory lookup of 40k.txt
+Need +1 pages
++ alloc_page() -> 13
+iptr 0 is 0
++ alloc_page() -> 14
+iptr 0 now 14
+Writing 1 pages, start: 2, off_by: 0
+On Page: 2, Written: 0,Writing: 4096
+start
+node size: 12288
+write(/40k.txt, 4096 bytes, @+8192) -> 4096
+directory lookup of 40k.txt
+Need +2 pages
+iptr 0 is 14
+iptr 1 is 0
++ alloc_page() -> 15
+iptr 1 now 15
+Writing 1 pages, start: 3, off_by: 0
+On Page: 3, Written: 0,Writing: 4096
+start
+node size: 16384
+write(/40k.txt, 4096 bytes, @+12288) -> 4096
+directory lookup of 40k.txt
+Need +3 pages
+iptr 0 is 14
+iptr 1 is 15
+iptr 2 is 0
++ alloc_page() -> 16
+iptr 2 now 16
+Writing 1 pages, start: 4, off_by: 0
+On Page: 4, Written: 0,Writing: 4096
+start
+node size: 20480
+write(/40k.txt, 4096 bytes, @+16384) -> 4096
+directory lookup of 40k.txt
+Need +4 pages
+iptr 0 is 14
+iptr 1 is 15
+iptr 2 is 16
+iptr 3 is 0
++ alloc_page() -> 17
+iptr 3 now 17
+Writing 1 pages, start: 5, off_by: 0
+On Page: 5, Written: 0,Writing: 4096
+start
+node size: 24576
+write(/40k.txt, 4096 bytes, @+20480) -> 4096
+directory lookup of 40k.txt
+Need +5 pages
+iptr 0 is 14
+iptr 1 is 15
+iptr 2 is 16
+iptr 3 is 17
+iptr 4 is 0
++ alloc_page() -> 18
+iptr 4 now 18
+Writing 1 pages, start: 6, off_by: 0
+On Page: 6, Written: 0,Writing: 4096
+start
+node size: 28672
+write(/40k.txt, 4096 bytes, @+24576) -> 4096
+directory lookup of 40k.txt
+Need +6 pages
+iptr 0 is 14
+iptr 1 is 15
+iptr 2 is 16
+iptr 3 is 17
+iptr 4 is 18
+iptr 5 is 0
++ alloc_page() -> 19
+iptr 5 now 19
+Writing 1 pages, start: 7, off_by: 0
+On Page: 7, Written: 0,Writing: 4096
+start
+node size: 32768
+write(/40k.txt, 4096 bytes, @+28672) -> 4096
+directory lookup of 40k.txt
+Need +7 pages
+iptr 0 is 14
+iptr 1 is 15
+iptr 2 is 16
+iptr 3 is 17
+iptr 4 is 18
+iptr 5 is 19
+iptr 6 is 0
++ alloc_page() -> 20
+iptr 6 now 20
+Writing 1 pages, start: 8, off_by: 0
+On Page: 8, Written: 0,Writing: 4096
+start
+node size: 36864
+write(/40k.txt, 4096 bytes, @+32768) -> 4096
+directory lookup of 40k.txt
+Need +8 pages
+iptr 0 is 14
+iptr 1 is 15
+iptr 2 is 16
+iptr 3 is 17
+iptr 4 is 18
+iptr 5 is 19
+iptr 6 is 20
+iptr 7 is 0
++ alloc_page() -> 21
+iptr 7 now 21
+Writing 1 pages, start: 9, off_by: 0
+Writing less then page
+On Page: 9, Written: 0,Writing: 3137
+start
+node size: 40001
+write(/40k.txt, 3137 bytes, @+36864) -> 3137
+open(/40k.txt) -> 0
+ioctl(/40k.txt, 21505, ...) -> -1
+directory lookup of 40k.txt
+getattr(/40k.txt) -> (0) {mode: 100664, size: 40001}
+directory lookup of 40k.txt
+Reading 4 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+On Page: 1, Read: 4096, Reading: 4096
+On Page: 2, Read: 8192, Reading: 4096
+On Page: 3, Read: 12288, Reading: 4096
+read(/40k.txt, 16384 bytes, @+0) -> 16384
+directory lookup of 40k.txt
+Reading 6 pages, start: 4, off_by: 0
+On Page: 4, Read: 0, Reading: 4096
+start
+On Page: 5, Read: 4096, Reading: 4096
+On Page: 6, Read: 8192, Reading: 4096
+On Page: 7, Read: 12288, Reading: 4096
+On Page: 8, Read: 16384, Reading: 4096
+On Page: 9, Read: 20480, Reading: 4096
+read(/40k.txt, 24576 bytes, @+16384) -> 24576
+directory lookup of 40k.txt
+getattr(/40k.txt) -> (0) {mode: 100664, size: 40001}
+open(/40k.txt) -> 0
+ioctl(/40k.txt, 21505, ...) -> -1
+directory lookup of 40k.txt
+Reading 3 pages, start: 1, off_by: 4096
+On Page: 1, Read: 0, Reading: 4096
+start
+On Page: 2, Read: 0, Reading: 4096
+On Page: 3, Read: 4096, Reading: 4096
+read(/40k.txt, 12288 bytes, @+4096) -> 8192
+checking access of /
+access(/, 0001) -> 0
+directory lookup of dir1
+dir1 not found
+getattr(/dir1) -> (-2) {mode: 0000, size: 0}
+MKNOD : dir1 with mode: 16893
+ALLOCATING INODE
++ alloc_inode() -> 6
++ alloc_page() -> 22
++ alloc_page() -> 23
+putting node # 6 , dir1
+mknod(dir1, 40775) -> 0
+mkdir(/dir1) -> 0
+directory lookup of dir1
+getattr(/dir1) -> (0) {mode: 40775, size: 0}
+checking access of /dir1
+directory lookup of dir1
+access(/dir1, 0001) -> 0
+directory lookup of dir1
+directory lookup of dir2
+dir2 not found
+getattr(/dir1/dir2) -> (-2) {mode: 0000, size: 0}
+MKNOD : dir2 with mode: 16893
+ALLOCATING INODE
++ alloc_inode() -> 7
++ alloc_page() -> 24
++ alloc_page() -> 25
+directory lookup of dir1
+putting node # 7 , dir2
+mknod(dir2, 40775) -> 0
+mkdir(/dir1/dir2) -> 0
+directory lookup of dir1
+directory lookup of dir2
+getattr(/dir1/dir2) -> (0) {mode: 40775, size: 0}
+checking access of /dir1/dir2
+directory lookup of dir1
+directory lookup of dir2
+access(/dir1/dir2, 0001) -> 0
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+dir3 not found
+getattr(/dir1/dir2/dir3) -> (-2) {mode: 0000, size: 0}
+MKNOD : dir3 with mode: 16893
+ALLOCATING INODE
++ alloc_inode() -> 8
++ alloc_page() -> 26
++ alloc_page() -> 27
+directory lookup of dir1
+directory lookup of dir2
+putting node # 8 , dir3
+mknod(dir3, 40775) -> 0
+mkdir(/dir1/dir2/dir3) -> 0
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+getattr(/dir1/dir2/dir3) -> (0) {mode: 40775, size: 0}
+checking access of /dir1/dir2/dir3
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+access(/dir1/dir2/dir3, 0001) -> 0
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+dir4 not found
+getattr(/dir1/dir2/dir3/dir4) -> (-2) {mode: 0000, size: 0}
+MKNOD : dir4 with mode: 16893
+ALLOCATING INODE
++ alloc_inode() -> 9
++ alloc_page() -> 28
++ alloc_page() -> 29
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+putting node # 9 , dir4
+mknod(dir4, 40775) -> 0
+mkdir(/dir1/dir2/dir3/dir4) -> 0
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+getattr(/dir1/dir2/dir3/dir4) -> (0) {mode: 40775, size: 0}
+checking access of /dir1/dir2/dir3/dir4
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+access(/dir1/dir2/dir3/dir4, 0001) -> 0
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+dir5 not found
+getattr(/dir1/dir2/dir3/dir4/dir5) -> (-2) {mode: 0000, size: 0}
+MKNOD : dir5 with mode: 16893
+ALLOCATING INODE
++ alloc_inode() -> 10
++ alloc_page() -> 30
++ alloc_page() -> 31
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+putting node # 10 , dir5
+mknod(dir5, 40775) -> 0
+mkdir(/dir1/dir2/dir3/dir4/dir5) -> 0
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+getattr(/dir1/dir2/dir3/dir4/dir5) -> (0) {mode: 40775, size: 0}
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+directory lookup of hello.txt
+hello.txt not found
+getattr(/dir1/dir2/dir3/dir4/dir5/hello.txt) -> (-2) {mode: 0000, size: 0}
+MKNOD : hello.txt with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 11
++ alloc_page() -> 32
++ alloc_page() -> 33
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+putting node # 11 , hello.txt
+mknod(hello.txt, 100664) -> 0
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+directory lookup of hello.txt
+getattr(/dir1/dir2/dir3/dir4/dir5/hello.txt) -> (0) {mode: 100664, size: 0}
+open(/dir1/dir2/dir3/dir4/dir5/hello.txt) -> 0
+ioctl(/dir1/dir2/dir3/dir4/dir5/hello.txt, 21505, ...) -> -1
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+directory lookup of hello.txt
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 12
+start
+node size: 12
+write(/dir1/dir2/dir3/dir4/dir5/hello.txt, 12 bytes, @+0) -> 12
+open(/dir1/dir2/dir3/dir4/dir5/hello.txt) -> 0
+ioctl(/dir1/dir2/dir3/dir4/dir5/hello.txt, 21505, ...) -> -1
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+directory lookup of hello.txt
+getattr(/dir1/dir2/dir3/dir4/dir5/hello.txt) -> (0) {mode: 100664, size: 12}
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+directory lookup of hello.txt
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/dir1/dir2/dir3/dir4/dir5/hello.txt, 4096 bytes, @+0) -> 4096
+directory lookup of dir1
+directory lookup of dir2
+directory lookup of dir3
+directory lookup of dir4
+directory lookup of dir5
+directory lookup of hello.txt
+getattr(/dir1/dir2/dir3/dir4/dir5/hello.txt) -> (0) {mode: 100664, size: 12}
+directory lookup of numbers
+numbers not found
+getattr(/numbers) -> (-2) {mode: 0000, size: 0}
+MKNOD : numbers with mode: 16893
+ALLOCATING INODE
++ alloc_inode() -> 12
++ alloc_page() -> 34
++ alloc_page() -> 35
+putting node # 12 , numbers
+mknod(numbers, 40775) -> 0
+mkdir(/numbers) -> 0
+directory lookup of numbers
+getattr(/numbers) -> (0) {mode: 40775, size: 0}
+directory lookup of numbers
+directory lookup of 1.num
+1.num not found
+getattr(/numbers/1.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 1.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 13
++ alloc_page() -> 36
++ alloc_page() -> 37
+directory lookup of numbers
+putting node # 13 , 1.num
+mknod(1.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 1.num
+getattr(/numbers/1.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/1.num) -> 0
+ioctl(/numbers/1.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 1.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/1.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 2.num
+2.num not found
+getattr(/numbers/2.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 2.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 14
++ alloc_page() -> 38
++ alloc_page() -> 39
+directory lookup of numbers
+putting node # 14 , 2.num
+mknod(2.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 2.num
+getattr(/numbers/2.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/2.num) -> 0
+ioctl(/numbers/2.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 2.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/2.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 3.num
+3.num not found
+getattr(/numbers/3.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 3.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 15
++ alloc_page() -> 40
++ alloc_page() -> 41
+directory lookup of numbers
+putting node # 15 , 3.num
+mknod(3.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 3.num
+getattr(/numbers/3.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/3.num) -> 0
+ioctl(/numbers/3.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 3.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/3.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 4.num
+4.num not found
+getattr(/numbers/4.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 4.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 16
++ alloc_page() -> 42
++ alloc_page() -> 43
+directory lookup of numbers
+putting node # 16 , 4.num
+mknod(4.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 4.num
+getattr(/numbers/4.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/4.num) -> 0
+ioctl(/numbers/4.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 4.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/4.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 5.num
+5.num not found
+getattr(/numbers/5.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 5.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 17
++ alloc_page() -> 44
++ alloc_page() -> 45
+directory lookup of numbers
+putting node # 17 , 5.num
+mknod(5.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 5.num
+getattr(/numbers/5.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/5.num) -> 0
+ioctl(/numbers/5.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 5.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/5.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 6.num
+6.num not found
+getattr(/numbers/6.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 6.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 18
++ alloc_page() -> 46
++ alloc_page() -> 47
+directory lookup of numbers
+putting node # 18 , 6.num
+mknod(6.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 6.num
+getattr(/numbers/6.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/6.num) -> 0
+ioctl(/numbers/6.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 6.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/6.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 7.num
+7.num not found
+getattr(/numbers/7.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 7.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 19
++ alloc_page() -> 48
++ alloc_page() -> 49
+directory lookup of numbers
+putting node # 19 , 7.num
+mknod(7.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 7.num
+getattr(/numbers/7.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/7.num) -> 0
+ioctl(/numbers/7.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 7.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/7.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 8.num
+8.num not found
+getattr(/numbers/8.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 8.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 20
++ alloc_page() -> 50
++ alloc_page() -> 51
+directory lookup of numbers
+putting node # 20 , 8.num
+mknod(8.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 8.num
+getattr(/numbers/8.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/8.num) -> 0
+ioctl(/numbers/8.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 8.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/8.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 9.num
+9.num not found
+getattr(/numbers/9.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 9.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 21
++ alloc_page() -> 52
++ alloc_page() -> 53
+directory lookup of numbers
+putting node # 21 , 9.num
+mknod(9.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 9.num
+getattr(/numbers/9.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/9.num) -> 0
+ioctl(/numbers/9.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 9.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 2
+start
+node size: 2
+write(/numbers/9.num, 2 bytes, @+0) -> 2
+directory lookup of numbers
+directory lookup of 10.num
+10.num not found
+getattr(/numbers/10.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 10.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 22
++ alloc_page() -> 54
++ alloc_page() -> 55
+directory lookup of numbers
+putting node # 22 , 10.num
+mknod(10.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 10.num
+getattr(/numbers/10.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/10.num) -> 0
+ioctl(/numbers/10.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 10.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/10.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 11.num
+11.num not found
+getattr(/numbers/11.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 11.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 23
++ alloc_page() -> 56
++ alloc_page() -> 57
+directory lookup of numbers
+putting node # 23 , 11.num
+mknod(11.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 11.num
+getattr(/numbers/11.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/11.num) -> 0
+ioctl(/numbers/11.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 11.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/11.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 12.num
+12.num not found
+getattr(/numbers/12.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 12.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 24
++ alloc_page() -> 58
++ alloc_page() -> 59
+directory lookup of numbers
+putting node # 24 , 12.num
+mknod(12.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 12.num
+getattr(/numbers/12.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/12.num) -> 0
+ioctl(/numbers/12.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 12.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/12.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 13.num
+13.num not found
+getattr(/numbers/13.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 13.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 25
++ alloc_page() -> 60
++ alloc_page() -> 61
+directory lookup of numbers
+putting node # 25 , 13.num
+mknod(13.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 13.num
+getattr(/numbers/13.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/13.num) -> 0
+ioctl(/numbers/13.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 13.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/13.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 14.num
+14.num not found
+getattr(/numbers/14.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 14.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 26
++ alloc_page() -> 62
++ alloc_page() -> 63
+directory lookup of numbers
+putting node # 26 , 14.num
+mknod(14.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 14.num
+getattr(/numbers/14.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/14.num) -> 0
+ioctl(/numbers/14.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 14.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/14.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 15.num
+15.num not found
+getattr(/numbers/15.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 15.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 27
++ alloc_page() -> 64
++ alloc_page() -> 65
+directory lookup of numbers
+putting node # 27 , 15.num
+mknod(15.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 15.num
+getattr(/numbers/15.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/15.num) -> 0
+ioctl(/numbers/15.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 15.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/15.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 16.num
+16.num not found
+getattr(/numbers/16.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 16.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 28
++ alloc_page() -> 66
++ alloc_page() -> 67
+directory lookup of numbers
+putting node # 28 , 16.num
+mknod(16.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 16.num
+getattr(/numbers/16.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/16.num) -> 0
+ioctl(/numbers/16.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 16.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/16.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 17.num
+17.num not found
+getattr(/numbers/17.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 17.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 29
++ alloc_page() -> 68
++ alloc_page() -> 69
+directory lookup of numbers
+putting node # 29 , 17.num
+mknod(17.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 17.num
+getattr(/numbers/17.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/17.num) -> 0
+ioctl(/numbers/17.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 17.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/17.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 18.num
+18.num not found
+getattr(/numbers/18.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 18.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 30
++ alloc_page() -> 70
++ alloc_page() -> 71
+directory lookup of numbers
+putting node # 30 , 18.num
+mknod(18.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 18.num
+getattr(/numbers/18.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/18.num) -> 0
+ioctl(/numbers/18.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 18.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/18.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 19.num
+19.num not found
+getattr(/numbers/19.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 19.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 31
++ alloc_page() -> 72
++ alloc_page() -> 73
+directory lookup of numbers
+putting node # 31 , 19.num
+mknod(19.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 19.num
+getattr(/numbers/19.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/19.num) -> 0
+ioctl(/numbers/19.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 19.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/19.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 20.num
+20.num not found
+getattr(/numbers/20.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 20.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 32
++ alloc_page() -> 74
++ alloc_page() -> 75
+directory lookup of numbers
+putting node # 32 , 20.num
+mknod(20.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 20.num
+getattr(/numbers/20.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/20.num) -> 0
+ioctl(/numbers/20.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 20.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/20.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 21.num
+21.num not found
+getattr(/numbers/21.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 21.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 33
++ alloc_page() -> 76
++ alloc_page() -> 77
+directory lookup of numbers
+putting node # 33 , 21.num
+mknod(21.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 21.num
+getattr(/numbers/21.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/21.num) -> 0
+ioctl(/numbers/21.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 21.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/21.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 22.num
+22.num not found
+getattr(/numbers/22.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 22.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 34
++ alloc_page() -> 78
++ alloc_page() -> 79
+directory lookup of numbers
+putting node # 34 , 22.num
+mknod(22.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 22.num
+getattr(/numbers/22.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/22.num) -> 0
+ioctl(/numbers/22.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 22.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/22.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 23.num
+23.num not found
+getattr(/numbers/23.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 23.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 35
++ alloc_page() -> 80
++ alloc_page() -> 81
+directory lookup of numbers
+putting node # 35 , 23.num
+mknod(23.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 23.num
+getattr(/numbers/23.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/23.num) -> 0
+ioctl(/numbers/23.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 23.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/23.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 24.num
+24.num not found
+getattr(/numbers/24.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 24.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 36
++ alloc_page() -> 82
++ alloc_page() -> 83
+directory lookup of numbers
+putting node # 36 , 24.num
+mknod(24.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 24.num
+getattr(/numbers/24.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/24.num) -> 0
+ioctl(/numbers/24.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 24.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/24.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 25.num
+25.num not found
+getattr(/numbers/25.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 25.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 37
++ alloc_page() -> 84
++ alloc_page() -> 85
+directory lookup of numbers
+putting node # 37 , 25.num
+mknod(25.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 25.num
+getattr(/numbers/25.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/25.num) -> 0
+ioctl(/numbers/25.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 25.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/25.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 26.num
+26.num not found
+getattr(/numbers/26.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 26.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 38
++ alloc_page() -> 86
++ alloc_page() -> 87
+directory lookup of numbers
+putting node # 38 , 26.num
+mknod(26.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 26.num
+getattr(/numbers/26.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/26.num) -> 0
+ioctl(/numbers/26.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 26.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/26.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 27.num
+27.num not found
+getattr(/numbers/27.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 27.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 39
++ alloc_page() -> 88
++ alloc_page() -> 89
+directory lookup of numbers
+putting node # 39 , 27.num
+mknod(27.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 27.num
+getattr(/numbers/27.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/27.num) -> 0
+ioctl(/numbers/27.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 27.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/27.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 28.num
+28.num not found
+getattr(/numbers/28.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 28.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 40
++ alloc_page() -> 90
++ alloc_page() -> 91
+directory lookup of numbers
+putting node # 40 , 28.num
+mknod(28.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 28.num
+getattr(/numbers/28.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/28.num) -> 0
+ioctl(/numbers/28.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 28.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/28.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 29.num
+29.num not found
+getattr(/numbers/29.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 29.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 41
++ alloc_page() -> 92
++ alloc_page() -> 93
+directory lookup of numbers
+putting node # 41 , 29.num
+mknod(29.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 29.num
+getattr(/numbers/29.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/29.num) -> 0
+ioctl(/numbers/29.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 29.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/29.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 30.num
+30.num not found
+getattr(/numbers/30.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 30.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 42
++ alloc_page() -> 94
++ alloc_page() -> 95
+directory lookup of numbers
+putting node # 42 , 30.num
+mknod(30.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 30.num
+getattr(/numbers/30.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/30.num) -> 0
+ioctl(/numbers/30.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 30.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/30.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 31.num
+31.num not found
+getattr(/numbers/31.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 31.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 43
++ alloc_page() -> 96
++ alloc_page() -> 97
+directory lookup of numbers
+putting node # 43 , 31.num
+mknod(31.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 31.num
+getattr(/numbers/31.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/31.num) -> 0
+ioctl(/numbers/31.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 31.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/31.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 32.num
+32.num not found
+getattr(/numbers/32.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 32.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 44
++ alloc_page() -> 98
++ alloc_page() -> 99
+directory lookup of numbers
+putting node # 44 , 32.num
+mknod(32.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 32.num
+getattr(/numbers/32.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/32.num) -> 0
+ioctl(/numbers/32.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 32.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/32.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 33.num
+33.num not found
+getattr(/numbers/33.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 33.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 45
++ alloc_page() -> 100
++ alloc_page() -> 101
+directory lookup of numbers
+putting node # 45 , 33.num
+mknod(33.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 33.num
+getattr(/numbers/33.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/33.num) -> 0
+ioctl(/numbers/33.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 33.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/33.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 34.num
+34.num not found
+getattr(/numbers/34.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 34.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 46
++ alloc_page() -> 102
++ alloc_page() -> 103
+directory lookup of numbers
+putting node # 46 , 34.num
+mknod(34.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 34.num
+getattr(/numbers/34.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/34.num) -> 0
+ioctl(/numbers/34.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 34.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/34.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 35.num
+35.num not found
+getattr(/numbers/35.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 35.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 47
++ alloc_page() -> 104
++ alloc_page() -> 105
+directory lookup of numbers
+putting node # 47 , 35.num
+mknod(35.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 35.num
+getattr(/numbers/35.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/35.num) -> 0
+ioctl(/numbers/35.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 35.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/35.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 36.num
+36.num not found
+getattr(/numbers/36.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 36.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 48
++ alloc_page() -> 106
++ alloc_page() -> 107
+directory lookup of numbers
+putting node # 48 , 36.num
+mknod(36.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 36.num
+getattr(/numbers/36.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/36.num) -> 0
+ioctl(/numbers/36.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 36.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/36.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 37.num
+37.num not found
+getattr(/numbers/37.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 37.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 49
++ alloc_page() -> 108
++ alloc_page() -> 109
+directory lookup of numbers
+putting node # 49 , 37.num
+mknod(37.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 37.num
+getattr(/numbers/37.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/37.num) -> 0
+ioctl(/numbers/37.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 37.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/37.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 38.num
+38.num not found
+getattr(/numbers/38.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 38.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 50
++ alloc_page() -> 110
++ alloc_page() -> 111
+directory lookup of numbers
+putting node # 50 , 38.num
+mknod(38.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 38.num
+getattr(/numbers/38.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/38.num) -> 0
+ioctl(/numbers/38.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 38.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/38.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 39.num
+39.num not found
+getattr(/numbers/39.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 39.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 51
++ alloc_page() -> 112
++ alloc_page() -> 113
+directory lookup of numbers
+putting node # 51 , 39.num
+mknod(39.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 39.num
+getattr(/numbers/39.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/39.num) -> 0
+ioctl(/numbers/39.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 39.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/39.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 40.num
+40.num not found
+getattr(/numbers/40.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 40.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 52
++ alloc_page() -> 114
++ alloc_page() -> 115
+directory lookup of numbers
+putting node # 52 , 40.num
+mknod(40.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 40.num
+getattr(/numbers/40.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/40.num) -> 0
+ioctl(/numbers/40.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 40.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/40.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 41.num
+41.num not found
+getattr(/numbers/41.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 41.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 53
++ alloc_page() -> 116
++ alloc_page() -> 117
+directory lookup of numbers
+putting node # 53 , 41.num
+mknod(41.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 41.num
+getattr(/numbers/41.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/41.num) -> 0
+ioctl(/numbers/41.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 41.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/41.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 42.num
+42.num not found
+getattr(/numbers/42.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 42.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 54
++ alloc_page() -> 118
++ alloc_page() -> 119
+directory lookup of numbers
+putting node # 54 , 42.num
+mknod(42.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 42.num
+getattr(/numbers/42.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/42.num) -> 0
+ioctl(/numbers/42.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 42.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/42.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 43.num
+43.num not found
+getattr(/numbers/43.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 43.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 55
++ alloc_page() -> 120
++ alloc_page() -> 121
+directory lookup of numbers
+putting node # 55 , 43.num
+mknod(43.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 43.num
+getattr(/numbers/43.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/43.num) -> 0
+ioctl(/numbers/43.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 43.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/43.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 44.num
+44.num not found
+getattr(/numbers/44.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 44.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 56
++ alloc_page() -> 122
++ alloc_page() -> 123
+directory lookup of numbers
+putting node # 56 , 44.num
+mknod(44.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 44.num
+getattr(/numbers/44.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/44.num) -> 0
+ioctl(/numbers/44.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 44.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/44.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 45.num
+45.num not found
+getattr(/numbers/45.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 45.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 57
++ alloc_page() -> 124
++ alloc_page() -> 125
+directory lookup of numbers
+putting node # 57 , 45.num
+mknod(45.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 45.num
+getattr(/numbers/45.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/45.num) -> 0
+ioctl(/numbers/45.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 45.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/45.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 46.num
+46.num not found
+getattr(/numbers/46.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 46.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 58
++ alloc_page() -> 126
++ alloc_page() -> 127
+directory lookup of numbers
+putting node # 58 , 46.num
+mknod(46.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 46.num
+getattr(/numbers/46.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/46.num) -> 0
+ioctl(/numbers/46.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 46.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/46.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 47.num
+47.num not found
+getattr(/numbers/47.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 47.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 59
++ alloc_page() -> 128
++ alloc_page() -> 129
+directory lookup of numbers
+putting node # 59 , 47.num
+mknod(47.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 47.num
+getattr(/numbers/47.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/47.num) -> 0
+ioctl(/numbers/47.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 47.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/47.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 48.num
+48.num not found
+getattr(/numbers/48.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 48.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 60
++ alloc_page() -> 130
++ alloc_page() -> 131
+directory lookup of numbers
+putting node # 60 , 48.num
+mknod(48.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 48.num
+getattr(/numbers/48.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/48.num) -> 0
+ioctl(/numbers/48.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 48.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/48.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 49.num
+49.num not found
+getattr(/numbers/49.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 49.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 61
++ alloc_page() -> 132
++ alloc_page() -> 133
+directory lookup of numbers
+putting node # 61 , 49.num
+mknod(49.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 49.num
+getattr(/numbers/49.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/49.num) -> 0
+ioctl(/numbers/49.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 49.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/49.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+directory lookup of 50.num
+50.num not found
+getattr(/numbers/50.num) -> (-2) {mode: 0000, size: 0}
+MKNOD : 50.num with mode: 33204
+ALLOCATING INODE
++ alloc_inode() -> 62
++ alloc_page() -> 134
++ alloc_page() -> 135
+directory lookup of numbers
+putting node # 62 , 50.num
+mknod(50.num, 100664) -> 0
+directory lookup of numbers
+directory lookup of 50.num
+getattr(/numbers/50.num) -> (0) {mode: 100664, size: 0}
+open(/numbers/50.num) -> 0
+ioctl(/numbers/50.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 50.num
+Writing 1 pages, start: 0, off_by: 0
+Writing less then page
+On Page: 0, Written: 0,Writing: 3
+start
+node size: 3
+write(/numbers/50.num, 3 bytes, @+0) -> 3
+directory lookup of numbers
+getattr(/numbers) -> (0) {mode: 40775, size: 0}
+Read Dir
+directory lookup of numbers
+File Found: 50.num
+File Found: 49.num
+File Found: 48.num
+File Found: 47.num
+File Found: 46.num
+File Found: 45.num
+File Found: 44.num
+File Found: 43.num
+File Found: 42.num
+File Found: 41.num
+File Found: 40.num
+File Found: 39.num
+File Found: 38.num
+File Found: 37.num
+File Found: 36.num
+File Found: 35.num
+File Found: 34.num
+File Found: 33.num
+File Found: 32.num
+File Found: 
+File Found: 30.num
+File Found: 29.num
+File Found: 28.num
+File Found: 27.num
+File Found: 26.num
+File Found: 25.num
+File Found: 24.num
+File Found: 23.num
+File Found: 22.num
+File Found: 21.num
+File Found: 20.num
+File Found: 19.num
+File Found: 18.num
+File Found: 17.num
+File Found: 16.num
+File Found: 15.num
+File Found: 14.num
+File Found: 13.num
+File Found: 12.num
+File Found: 11.num
+File Found: 10.num
+File Found: 9.num
+File Found: 8.num
+File Found: 7.num
+File Found: 6.num
+File Found: 5.num
+File Found: 4.num
+File Found: 3.num
+File Found: 2.num
+File Found: 1.num
+readdir(/numbers) -> 0
+open(/numbers/10.num) -> 0
+ioctl(/numbers/10.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 10.num
+getattr(/numbers/10.num) -> (0) {mode: 100664, size: 3}
+directory lookup of numbers
+directory lookup of 10.num
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/numbers/10.num, 4096 bytes, @+0) -> 4096
+directory lookup of numbers
+directory lookup of 10.num
+getattr(/numbers/10.num) -> (0) {mode: 100664, size: 3}
+open(/numbers/20.num) -> 0
+ioctl(/numbers/20.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 20.num
+getattr(/numbers/20.num) -> (0) {mode: 100664, size: 3}
+directory lookup of numbers
+directory lookup of 20.num
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/numbers/20.num, 4096 bytes, @+0) -> 4096
+directory lookup of numbers
+directory lookup of 20.num
+getattr(/numbers/20.num) -> (0) {mode: 100664, size: 3}
+open(/numbers/30.num) -> 0
+ioctl(/numbers/30.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 30.num
+getattr(/numbers/30.num) -> (0) {mode: 100664, size: 3}
+directory lookup of numbers
+directory lookup of 30.num
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/numbers/30.num, 4096 bytes, @+0) -> 4096
+directory lookup of numbers
+directory lookup of 30.num
+getattr(/numbers/30.num) -> (0) {mode: 100664, size: 3}
+open(/numbers/40.num) -> 0
+ioctl(/numbers/40.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 40.num
+getattr(/numbers/40.num) -> (0) {mode: 100664, size: 3}
+directory lookup of numbers
+directory lookup of 40.num
+Reading 1 pages, start: 0, off_by: 0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/numbers/40.num, 4096 bytes, @+0) -> 4096
+directory lookup of numbers
+directory lookup of 40.num
+getattr(/numbers/40.num) -> (0) {mode: 100664, size: 3}
+open(/numbers/50.num) -> 0
+ioctl(/numbers/50.num, 21505, ...) -> -1
+directory lookup of numbers
+directory lookup of 50.num
+getattr(/numbers/50.num) -> (0) {mode: 100664, size: 3}
+directory lookup of numbers
+directory lookup of 50.num
+Reading 1 pages, start: 0, off_by: fusermount -u mnt || true
+0
+On Page: 0, Read: 0, Reading: 4096
+start
+read(/numbers/50.num, 4096 bytes, @+0) -> 4096
+directory lookup of numbers
+directory lookup of 50.num
+getattr(/numbers/50.num) -> (0) {mode: 100664, size: 3}
+directory lookup of numbers
+directory lookup of 7.num
+getattr(/numbers/7.num) -> (0) {mode: 100664, size: 2}
+checking access of /numbers/7.num
+directory lookup of numbers
+directory lookup of 7.num
+access(/numbers/7.num, 0002) -> 0
+unlinking /numbers/7.numdirectory lookup of numbers
+directory lookup of 7.num
++ free_page(48)
++ free_page(49)
+directory lookup of numbers
+deleting file 7.num
+unlink(/numbers/7.num) -> 0
+directory lookup of numbers
+directory lookup of 14.num
+getattr(/numbers/14.num) -> (0) {mode: 100664, size: 3}
+checking access of /numbers/14.num
+directory lookup of numbers
+directory lookup of 14.num
+access(/numbers/14.num, 0002) -> 0
+unlinking /numbers/14.numdirectory lookup of numbers
+directory lookup of 14.num
++ free_page(62)
++ free_page(63)
+directory lookup of numbers
+deleting file 14.num
+unlink(/numbers/14.num) -> 0
+directory lookup of numbers
+directory lookup of 21.num
+getattr(/numbers/21.num) -> (0) {mode: 100664, size: 3}
+checking access of /numbers/21.num
+directory lookup of numbers
+directory lookup of 21.num
+access(/numbers/21.num, 0002) -> 0
+unlinking /numbers/21.numdirectory lookup of numbers
+directory lookup of 21.num
++ free_page(76)
++ free_page(77)
+directory lookup of numbers
+deleting file 21.num
+unlink(/numbers/21.num) -> 0
+directory lookup of dir1
+getattr(/dir1) -> (0) {mode: 40775, size: 0}
+directory lookup of numbers
+getattr(/numbers) -> (0) {mode: 40775, size: 0}
+directory lookup of numbers
+directory lookup of 28.num
+getattr(/numbers/28.num) -> (0) {mode: 100664, size: 3}
+checking access of /numbers/28.num
+directory lookup of numbers
+directory lookup of 28.num
+access(/numbers/28.num, 0002) -> 0
+unlinking /numbers/28.numdirectory lookup of numbers
+directory lookup of 28.num
++ free_page(90)
++ free_page(91)
+directory lookup of numbers
+deleting file 28.num
+unlink(/numbers/28.num) -> 0
+mkdir -p mnt || true
+./nufs -s -f mnt data.nufs
+TODO: mount data.nufs as data file
+PATH IS data.nufs
+---PAGE INIT CALLED AGAIN---
+---INITS DONE---
+checking access of /
+access(/, 0004) -> 0
+directory lookup of .Trash
+.Trash not found
+getattr(/.Trash) -> (-2) {mode: 0000, size: 0}
+directory lookup of .Trash-1000
+.Trash-1000 not found
+getattr(/.Trash-1000) -> (-2) {mode: 0000, size: 0}
+directory lookup of .xdg-volume-info
+.xdg-volume-info not found
+getattr(/.xdg-volume-info) -> (-2) {mode: 0000, size: 0}
+directory lookup of autorun.inf
+autorun.inf not found
+getattr(/autorun.inf) -> (-2) {mode: 0000, size: 0}
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File fusermount -u mnt || true
+Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+getattr(/) -> (0) {mode: 40755, size: 0}
+Read Dir
+File Found: numbers
+File Found: dir1
+File Found: 40k.txt
+File Found: 2k.txt
+File Found: def.txt
+File Found: foo
+File Found: .
+readdir(/) -> 0
+directory lookup of autorun.inf
+autorun.inf not found
+getattr(/autorun.inf) -> (-2) {mode: 0000, size: 0}
+directory lookup of numbers
+getattr(/numbers) -> (0) {mode: 40775, size: 0}
+Read Dir
+directory lookup of numbers
+File Found: 6.num
+File Found: 5.num
+File Found: 4.num
+File Found: 3.num
+File Found: 2.num
+File Found: 1.num
+readdir(/numbers) -> 0
